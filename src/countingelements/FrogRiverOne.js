@@ -18,8 +18,8 @@ function solution(X, A) {
 }
 
 
-console.log(solution(5, [1, 3, 1, 4, 2, 3, 5, 4]))
+console.log(solution(5, [1, 3, 1, 4, 2, 3, 5, 4]));
 
-console.log(solution(1, [1, 1, 1]))
+console.log(solution(1, [1, 1, 1]));
 
-console.log(solution(3, [1, 2, 1]))
+console.log(solution(3, [1, 2, 1]));
