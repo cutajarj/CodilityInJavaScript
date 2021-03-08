@@ -5,9 +5,9 @@
 
 
 function solution(X, A) {
-    var river_positions = new Array(X + 1).fill(false);
-    for (time = 0; time < A.length; time++) {
-        var pos = A[time];
+    let river_positions = new Array(X + 1).fill(false);
+    for (let time = 0; time < A.length; time++) {
+        let pos = A[time];
         if (!river_positions[pos]) {
             river_positions[pos] = true;
             X -= 1;

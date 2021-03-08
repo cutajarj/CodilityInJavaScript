@@ -5,16 +5,15 @@
 
 
 function solution(A) {
-    leftSum = A[0];
-    rightSum = 0;
-    A.forEach(number => rightSum += number);
-    rightSum -= leftSum
+    let leftSum = A[0];
+    let rightSum = 0;
+    A.slice(1).forEach(number => rightSum += number)
 
-    diff = Math.abs(leftSum - rightSum);
-    for (i = 1; i < A.length - 1; i++) {
+    let diff = Math.abs(leftSum - rightSum);
+    for (let i = 1; i < A.length - 1; i++) {
         leftSum += A[i];
         rightSum -= A[i];
-        currentDiff = Math.abs(leftSum - rightSum);
+        let currentDiff = Math.abs(leftSum - rightSum);
         if (diff > currentDiff) diff = currentDiff;
     }
     return diff;

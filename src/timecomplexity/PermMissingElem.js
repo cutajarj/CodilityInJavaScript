@@ -5,12 +5,12 @@
 
 
 function solution(A) {
-    var actualSum = 0;
+    let actualSum = 0;
     A.forEach(number => {
         actualSum += number;
     });
-    maxNumber = A.length + 1;
-    expectedSum = (maxNumber * (maxNumber + 1) / 2);
+    let maxNumber = A.length + 1;
+    let expectedSum = (maxNumber * (maxNumber + 1) / 2);
     return (expectedSum - actualSum);
 }
 
