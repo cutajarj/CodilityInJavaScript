@@ -7,7 +7,8 @@
 function solution(A) {
     leftSum = A[0];
     rightSum = 0;
-    A.slice(1).forEach(number => rightSum += number);
+    A.forEach(number => rightSum += number);
+    rightSum -= leftSum
 
     diff = Math.abs(leftSum - rightSum);
     for (i = 1; i < A.length - 1; i++) {
