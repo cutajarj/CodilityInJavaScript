@@ -1,0 +1,16 @@
+> 6 / 2
+3
+> 7 / 2
+3.5
+> Math.ceil(7 / 2)
+4
+> Math.ceil(6 / 2)
+3
+> 11 / 2
+5.5
+> Math.floor(11 / 2)
+5
+> Math.floor(10 / 2)
+5
+> Math.floor(11 / 2) - Math.ceil(6 / 2) + 1
+3
