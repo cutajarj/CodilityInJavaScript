@@ -4,7 +4,6 @@
  * This is marked as PAINLESS difficulty
  */
 
-
 function solution(A) {
     let consecutiveSize = 0;
     let candidate = 0;
@@ -31,5 +30,4 @@ function solution(A) {
 }
 
 console.log(solution([3, 0, 1, 1, 4, 1, 1]));
-
 console.log(solution([1, 2, 3, 4, 5, 6, 7]));
