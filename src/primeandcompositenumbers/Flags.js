@@ -5,8 +5,8 @@
  */
 
 function solution(A) {
-    let nextPeak = A.length;
     let peaks = new Array(A.length);
+    let nextPeak = A.length;
     peaks[A.length - 1] = nextPeak;
     for (let i = A.length - 2; i > 0; i--) {
         if (A[i - 1] < A[i] && A[i + 1] < A[i])
@@ -21,7 +21,6 @@ function solution(A) {
         current_guess = next_guess;
         next_guess += 1;
     }
-
     return current_guess;
 }
 
